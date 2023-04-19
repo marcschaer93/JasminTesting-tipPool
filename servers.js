@@ -9,8 +9,8 @@ let serverId = 0;
 serverForm.addEventListener('submit', submitServerInfo);
 
 // create server object and add to allServers, update html and reset input
-function submitServerInfo(evt) {
-  if (evt) evt.preventDefault(); // when running tests there is no event
+function submitServerInfo(e) {
+  if (e) e.preventDefault(); // when running tests there is no event
 
   let serverName = serverNameInput.value;
 

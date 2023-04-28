@@ -2,6 +2,9 @@ let billAmtInput = document.getElementById('billAmt');
 let tipAmtInput = document.getElementById('tipAmt');
 let paymentForm = document.getElementById('paymentForm');
 
+
+// let tableDataList = document.querySelectorAll('#paymentTable tbody tr td')
+
 let paymentTbody = document.querySelector('#paymentTable tbody');
 let summaryTds = document.querySelectorAll('#summaryTable tbody tr td');
 
@@ -35,6 +38,7 @@ function submitPaymentInfo(evt) {
 function createCurPayment() {
   let billAmt = billAmtInput.value;
   let tipAmt = tipAmtInput.value;
+
 
   if (billAmt === '' || tipAmt === '') return;
 
